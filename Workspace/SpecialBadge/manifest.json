@@ -1,0 +1,77 @@
+{
+    "name": "SpecialBadge",
+    "fantasyName": "Special",
+    "vendor": "JJAcme",
+    "version": "2.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.1.0",
+        "SCS": ">=21.1.0"
+    },
+    "description": "It will show the special badge on product details page.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/SpecialModule.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/SpecialModule/Configuration/SpecialModule.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/SpecialModule/Sass/_specialbadge-specialmodule.scss"
+        },
+        "files": [
+            "Modules/SpecialModule/Sass/_specialbadge-specialmodule.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/SpecialModule/Templates/jjacme_specialbadge_specialmodule.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/SpecialModule/JavaScript/JJAcme.SpecialBadge.SpecialModule.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/SpecialModule/JavaScript/JJAcme.SpecialBadge.SpecialModule.js",
+                    "Modules/SpecialModule/JavaScript/SpecialModule.View.js",
+                    "Modules/SpecialModule/JavaScript/JJAcme.SpecialBadge.SpecialModule.Model.js",
+                    "Modules/SpecialModule/JavaScript/JJAcme.SpecialBadge.SpecialModule.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/SpecialModule/SuiteScript/JJAcme.SpecialBadge.SpecialModule.js",
+        "files": [
+            "Modules/SpecialModule/SuiteScript/JJAcme.SpecialBadge.SpecialModule.js",
+            "Modules/SpecialModule/SuiteScript/SpecialModule.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\SpecialBadge",
+    "suitescript2": {
+        "files": [
+            "Modules/SpecialModule/SuiteScript2/SpecialModule.Service.ss"
+        ]
+    }
+}

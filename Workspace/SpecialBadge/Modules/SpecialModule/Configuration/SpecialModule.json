@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "SpecialModule.config": {
+            "group": "extensions",
+            "subtab": "SpecialModule_subtab",
+            "type": "string",
+            "title": "SpecialModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}
