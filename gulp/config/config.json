@@ -98,7 +98,7 @@
     },
     "nsdeployPath": ".nsdeploy",
     "_": [
-        "extension:local"
+        "extension:deploy"
     ],
     "product": "gulp",
     "$0": "..\\..\\..\\AppData\\Roaming\\npm\\node_modules\\gulp\\bin\\gulp.js",

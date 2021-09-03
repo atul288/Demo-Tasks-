@@ -70,5 +70,5 @@ define('product_list_control.tpl', ['Handlebars','Handlebars.CompilerNameLookup'
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isEmpty") : depth0),{"name":"if","hash":{},"fn":container.program(19, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "	</ul>\n	<h5 class=\"product-list-control-flyout-title\">"
     + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(alias1,"Or: ",{"name":"translate","hash":{},"data":data}))
-    + "</h5>\n	<div class=\"product-list-control-new-product-list-container\" data-type=\"new-item-container\"></div>\n</div>\n\n\n\n\n";
+    + "</h5>\n	<div class=\"product-list-control-new-product-list-container\" data-type=\"new-item-container\"></div>\n</div>\n\n\n\n\n\n";
 },"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/J_J/JJ_Base_Theme/2.0.8/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/J_J/JJ_Base_Theme/2.0.8/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'product_list_control'; return template;});

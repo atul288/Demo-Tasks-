@@ -5,8 +5,21 @@ define('product_details_quickview.tpl', ['Handlebars','Handlebars.CompilerNameLo
     + ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"isPriceEnabled") : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\n					<div data-view=\"StockDescription\"></div>\n\n					<div class=\"product-details-quickview-main-bottom-banner\">\n						<div id=\"banner-summary-bottom\" class=\"product-details-quickview-banner-summary-bottom\"></div>\n					</div>\n				</form>\n";
 },"2":function(container,depth0,helpers,partials,data) {
-    return "						<div class=\"product-details-quickview-quantity\" data-view=\"Quantity\"></div>\n\n						<section class=\"product-details-quickview-actions\">\n\n							<div class=\"product-details-quickview-actions-container\">\n								<div data-view=\"MainActionView\"></div>\n							</div>\n							<div class=\"product-details-quickview-actions-container\">\n								<div data-view=\"AddToProductList\" class=\"product-details-quickview-actions-container-add-to-wishlist\"></div>\n								<div data-view=\"ProductDetails.AddToQuote\" class=\"product-details-quickview-actions-container-add-to-quote\"></div>\n							</div>\n\n						</section>\n";
+    var stack1;
+
+  return "						<div class=\"product-details-quickview-quantity\" data-view=\"Quantity\"></div>\n\n						<section class=\"product-details-quickview-actions\">\n\n							<div class=\"product-details-quickview-actions-container\">\n								<div data-view=\"MainActionView\"></div>\n							</div>\n							<div class=\"product-details-quickview-actions-container\">\n								<div data-view=\"AddToProductList\" class=\"product-details-quickview-actions-container-add-to-wishlist\"></div>\n								<div data-view=\"ProductDetails.AddToQuote\" class=\"product-details-quickview-actions-container-add-to-quote\"></div>\n							</div>\n\n						</section>\n"
+    + ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"item") : stack1)) != null ? compilerNameLookup(stack1,"custitem3") : stack1),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "                        <input type=\"checkbox\" value=\"T\" "
+    + ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"item") : stack1)) != null ? compilerNameLookup(stack1,"custitem3") : stack1),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ">\n                           "
+    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"item") : stack1)) != null ? compilerNameLookup(stack1,"custitem4") : stack1), depth0))
+    + "\n";
 },"4":function(container,depth0,helpers,partials,data) {
+    return " checked ";
+},"6":function(container,depth0,helpers,partials,data) {
     return "				<div data-view=\"GlobalViewsMessageView.WronglyConfigureItem\"></div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
@@ -20,6 +33,6 @@ define('product_details_quickview.tpl', ['Handlebars','Handlebars.CompilerNameLo
     + "\">\n			"
     + alias4((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"View full details",{"name":"translate","hash":{},"data":data}))
     + "\n		</a>\n\n		<div class=\"product-details-quickview-main\">\n"
-    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isItemProperlyConfigured") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(4, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isItemProperlyConfigured") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(6, data, 0),"data":data})) != null ? stack1 : "")
     + "\n			<div id=\"banner-details-bottom\" class=\"product-details-quickview-banner-details-bottom\" data-cms-area=\"item_info_bottom\" data-cms-area-filters=\"page_type\"></div>\n		</div>\n\n	</div>\n</div>\n\n\n";
 },"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/J_J/JJ_Base_Theme/2.0.8/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/J_J/JJ_Base_Theme/2.0.8/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'product_details_quickview'; return template;});

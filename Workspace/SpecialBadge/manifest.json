@@ -2,15 +2,14 @@
     "name": "SpecialBadge",
     "fantasyName": "Special",
     "vendor": "JJAcme",
-    "version": "2.0.0",
     "type": "extension",
     "target": "SCA,SCS",
     "target_version": {
         "SCA": ">=21.1.0",
         "SCS": ">=21.1.0"
     },
+    "version": "2.0.0",
     "description": "It will show the special badge on product details page.",
-    "skins": [],
     "assets": {
         "img": {
             "files": []
@@ -29,14 +28,6 @@
             "Modules/SpecialModule/Configuration/SpecialModule.json"
         ]
     },
-    "sass": {
-        "entry_points": {
-            "shopping": "Modules/SpecialModule/Sass/_specialbadge-specialmodule.scss"
-        },
-        "files": [
-            "Modules/SpecialModule/Sass/_specialbadge-specialmodule.scss"
-        ]
-    },
     "templates": {
         "application": {
             "shopping": {
@@ -45,6 +36,14 @@
                 ]
             }
         }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/SpecialModule/Sass/_specialbadge-specialmodule.scss"
+        },
+        "files": [
+            "Modules/SpecialModule/Sass/_specialbadge-specialmodule.scss"
+        ]
     },
     "javascript": {
         "entry_points": {
@@ -68,7 +67,6 @@
             "Modules/SpecialModule/SuiteScript/SpecialModule.ServiceController.js"
         ]
     },
-    "local_folder": "Workspace\\SpecialBadge",
     "suitescript2": {
         "files": [
             "Modules/SpecialModule/SuiteScript2/SpecialModule.Service.ss"

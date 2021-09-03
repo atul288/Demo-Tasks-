@@ -69,6 +69,7 @@
 
 							</section>
 						{{/if}}
+
 						{{#if model.item.custitem3}}
                         	    <input type="checkbox" value="T" {{#if model.item.custitem3}} checked {{/if}}>
                         	{{model.item.custitem4}}

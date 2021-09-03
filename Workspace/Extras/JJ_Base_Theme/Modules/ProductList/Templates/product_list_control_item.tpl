@@ -20,8 +20,6 @@
 	{{/if}}	
 </div>
 
-
-
 {{!----
 Use the following context variables when customizing this template: 
 	
